@@ -1,0 +1,174 @@
+/* Reset and Base Styles */
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', 'Segoe UI', sans-serif;
+  /* background-image: url('images/BG.png'); */
+  background-repeat: repeat;
+  background-size: 30%;
+  color: #2e2b29;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* Image Styles */
+.logo {
+  width: 150px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.Me {
+  width: 400px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.dragonfly {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.mountain {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.shore {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.shadow {
+  width: 300px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Typography */
+h1 {
+  font-size: 1.75rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: 300;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Embed Styles */
+.bandcamp-embed {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+  border: none;
+}
+
+.youtube-embed {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(46, 43, 41, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  margin-top: auto;
+  padding: 3rem 1rem 1rem;
+  text-align: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+.footer-title {
+  font-size: 1.25rem;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-bottom: 1.5rem;
+  color: #2e2b29;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+}
+
+.social-icon svg {
+  width: 24px;
+  height: 24px;
+  stroke: #2e2b29;
+  fill: none;
+  stroke-width: 1.5;
+  transition: stroke 0.3s ease;
+}
+
+.social-icon:hover svg {
+  stroke: #6b6b6b;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: #6b6b6b;
+  font-weight: 300;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .footer-title {
+    font-size: 1.5rem;
+  }
+
+  .social-icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .social-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
