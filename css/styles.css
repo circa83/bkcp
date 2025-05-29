@@ -9,14 +9,16 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 1rem;
+  padding: 1.5rem;
   min-height: 100vh;
 }
 
 /* Header Styles */
 header {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2rem 0.5rem;
+  width: 100%;
+  max-width: 600px;
 }
 
 /* Image Styles */
@@ -27,7 +29,8 @@ header {
 }
 
 .Me {
-  width: 400px;
+  width: 100%;
+  max-width: 350px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -39,19 +42,22 @@ header {
 }
 
 .mountain {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   margin-bottom: 1rem;
 }
 
 .shore {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   margin-bottom: 1rem;
 }
 
 .shadow {
-  width: 300px;
+  width: 100%;
+  max-width: 300px;
   height: auto;
   margin-bottom: 1rem;
 }
@@ -70,6 +76,7 @@ p {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.6;
+  padding: 0 0.5rem;
 }
 
 /* Embed Styles */
@@ -149,13 +156,37 @@ footer {
 }
 
 /* Media Queries */
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .Me {
+    max-width: 300px;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    padding: 0 0.25rem;
+  }
+}
+
 @media (min-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+  
+  .Me {
+    max-width: 400px;
+  }
+  
   h1 {
     font-size: 2.25rem;
   }
 
   p {
     font-size: 1rem;
+    padding: 0;
   }
 
   .footer-title {
