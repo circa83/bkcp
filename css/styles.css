@@ -29,10 +29,11 @@ header {
 }
 
 .Me {
+  margin: 2rem 0;
   width: 100%;
-  max-width: 350px;
+  max-width: 600px;
   height: auto;
-  margin-bottom: 1rem;
+ 
 }
 
 .dragonfly {
